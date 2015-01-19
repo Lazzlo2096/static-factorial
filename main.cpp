@@ -1,8 +1,8 @@
 #include <iostream>
-#include <boost/mpl/eval_if.hpp>
+#include <boost/mpl/int.hpp>
 
 /**
- * @brief static compuation of factorial (compilation time)
+ * @brief static computation of factorial (compilation time)
  * @return the factorial of X
  */
 template<int X>
@@ -25,6 +25,7 @@ int factorial<1>()
 
 int main(int argc, char** argv)
 {
-    std::cout << "Staticaly computed value of factorial<8> is:" << factorial<8>() << std::endl;
+    std::cout << "Statically computed value of factorial<8> is:" << factorial<8>() << std::endl;
     return 0;
 }
+
